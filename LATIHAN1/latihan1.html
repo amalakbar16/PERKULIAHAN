@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penulisan CSS dengan External Style</title>
+    <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+    <div class="box">
+        <h1 id="tulisan">Belajar css External styyle</h1>
+    </div>
+    <br>
+
+    <div class="box1">
+        <h1>margin dan padding 1</h1>
+        <br>
+    </div>
+    <div class="box2">
+        <h1>margin dan padding 2</h1>
+    </div>
+
+    <br>
+    <div class="font1">
+        <h1>Pengaturan Font</h1>
+    </div>
+
+    <div class="font2">
+        <h1>Pengaturan Font 2</h1>
+    </div>
+
+    <div class="font3">
+        <h1>Pengaturan Font 3</h1>
+    </div>
+
+    <br>
+    <p class="text1">Mengatur ftormat ext 1</p>
+    <p class="text2">Mengatur format text 2</p>
+    <p class="text3">Mengatur format text 3</p>
+    <p class="text4">Mengatur format text 4</p>
+    
+    <br>
+    <h2>
+        contoh CSS position
+    </h2>
+
+    <div class="static">ini adalah elemen dengan posisi <b>static</b></div>
+
+    <div class="relative"></div>
+
+    <div class="container">
+        <div class="absolute">Ini adalah elemen dengan posisi <b>absolute</b></div>
+        <p>container ini memiliki <b>position = relative</b>, jadi elemen absolute ada didalamnya</p>
+    </div>
+
+    <div class="sticky">ini adalah elemen dengan posisi <b>sticky</b> (akan tetap diatas saat di scroll)</div>
+
+    <div class="spacer"></div>
+
+    <div class="fixed">ini adalah elemen dengan posisi <b>fied</b>tetap disudut bawah</div>
+
+    <div class="floatt">
+        <img class="gambar" src="amal.JPG">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vel sapien nec nunc ultricies tincidunt. Curabitur euismod, metus ut dapibus cursus, velit nunc scelerisque nunc, et volutpat augue ligula a lacus. Donec dictum, tortor et tincidunt scelerisque, sapien neque tristique purus, sed dapibus turpis felis sit amet nunc. Ut placerat justo et lorem dapibus, at pharetra felis tincidunt. Proin at leo nec justo tincidunt gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer in velit non purus maximus interdum. Etiam eget libero at sapien interdum fermentum.</p>
+    </div>
+
+    <br>
+    <h1>Cara design table dengan css</h1>
+    <table class="table1">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Alamat</th>
+            <th>Usia</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Andi</td>
+            <td>Magelang</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Budi</td>
+            <td>Jakarta</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Sanusi</td>
+            <td>Malang</td>
+            <td>29</td>
+        </tr>
+    </table>
+
+    <br>
+    <form id="registrasionForm">
+        <h2 class="regis">Formulir Pendaftaran</h2>
+
+        <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <span class="separator">:</span>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <span class="separator">:</span>
+            <input type="text" id="alamat" name="alamat" required>
+        </div>
+
+        <div class="form-group">
+            <label for="tptLahir">Tempat Lahir</label>
+            <span class="separator">:</span>
+            <input type="text" id="tptLahir" name="tptLahir" required>
+        </div>
+
+        <div class="form-group">
+            <label for="tglLahir">Tanggal Lahir</label>
+            <span class="separator">:</span>
+            <input type="date" id="tglLahir" name="tglLahir" required>
+        </div>
+
+        <div class="form-group">
+            <label for="jk">Jenis Kelamin</label>
+            <span class="separator">:</span>
+            <div class="radio-group">
+                <input type="radio" name="jk" value="Laki-laki" required> Laki-laki
+                <input type="radio" name="jk" value="Perempuan" required> Perempuan
+            </div>
+        </div>
+
+        <input type="submit" value="Daftar">
+    </form>
+
+    <script lang="Javascript">
+        document.write("Halo");
+    </script>
+    <br><br>
+    <script lang="Javascript">
+        var nilai;
+        var nilai2 = 3;
+        nilai = 2;
+        document.write("nilai = "+nilai+"<br>");
+        document.write("nilai2 = "+nilai2+"<br>");
+        document.write("hasil kali = "+nilai*nilai2+"<p>");
+    </script>
+
+    <script lang="Javascript">
+        var x =4;
+        var y = 11;
+        var z = "cat";
+        var q = "17";
+        ans1 = x + y;
+        ans2 = z + x;
+        ans3 = x + q;
+        ans4 = q - x;
+        ans5 = x * q;
+
+        document.write("x = "+x+"<br>");
+        document.write("y = "+y+"<br>");
+        document.write("z = "+z+"<br>");
+        document.write("q = "+q+"<p>");
+        document.write("x + q = "+ans1+"<br>");
+        document.write("z + x = "+ans2+"<br>");
+        document.write("x + q = "+ans3+"<br>");
+        document.write("q - x = "+ans4+"<br>");
+        document.write("x * q = "+ans5+"<br>");
+    </script>
+
+    <p id="demo"></p>
+    <script>
+        document.getElementById("demo").innerHTML = "Hello World!";
+    </script>
+
+    <p>Paragraf 1.</p>
+    <p>Paragraf 2.</p>
+    <p>Paragraf 3.</p>
+
+    <p id="demo2"></p>
+    <script>
+        var x = document.getElementsByTagName("p");
+        document.getElementById("demo2").innerHTML = 
+            'Paragraf pertama (indeks 9) adalah : ' + x[9].innerHTML;
+    </script>
+
+    <table>
+        <tr onmouseover="this.bgColor='lightblue'" onmouseout="this.bgColor='#f4f4f4'" bgColor="#f4f4f4">
+            <td>Baris Pertama</td>
+        </tr>
+        <tr onmouseover="style.color='red'" onmouseout="style.color='black'">
+            <td>Baris Kedua</td>
+        </tr>
+    </table>
+
+    <script>
+        document.getElementById('registrasionForm').addEventListener('submit', function(event) {
+            if (!validasiNama()) {
+                event.preventDefault(); // Mencegah pengiriman form jika validasi gagal
+            }
+        });
+        
+        function validasiNama() {
+            let inputNama = document.getElementById("nama").value;
+            let pola = /^[a-zA-Z' ]+$/; // Hanya huruf, spasis, dan petik satu yang diperbolehkan
+
+            if (!pola.test(inputNama)) {
+                alert("Nama hanya boleh berisi huruf dan tanda petik satu ('')");
+                return false;
+            }
+            alert("Nama valid!");
+            return true;
+        }
+    </script>
+
+    <form id="registrasionForm" onsubmit="return validasiNama()">
+        <h2>Formulir Pendafatan</h2>
+
+        <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <span class="separator">:</span>
+            <input type="text" id="nama" name="nama" required>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <span class="separator">:</span>
+            <input type="text" id="alamat" name="alamat" required>
+        </div>
+
+        <div class="form-group">
+            <label for="tptLahir">Tempat Lahir</label>
+            <span class="separator">:</span>
+            <input type="text" id="tptLahir" name="tptLahir" required>
+        </div>
+
+        <div class="form-group">
+            <label for="tglLahir">Nama Lengkap</label>
+            <span class="separator">:</span>
+            <input type="text" id="tglLahir" name="tglLahir" required>
+        </div>
+
+        <div class="form-group">
+            <label >jenis Kelamin</label>
+            <span class="separator">:</span>
+            <div class="radio-group">
+                <input type="radio" name="jk" value="Laki-laki" required>Laki-laki
+            <input type="radio" name="jk" value="Perempuan" required>Perempuan
+            </div>
+        </div>
+        
+        <input type="submit" value="Daftar">
+    </form>
+
+</body>
+</html>
