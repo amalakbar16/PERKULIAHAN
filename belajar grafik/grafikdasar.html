@@ -1,29 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <body>
     <!-- membuat elemen canvas untuk menempatkan grafik -->
-     <canvas id="myChart" style="position: relative; height: 50vh; width: 75vw;"></canvas>
+    <canvas id="myChart" style="position: relative; height: 50vh; width: 75vw;"></canvas>
 </body>
 
 <!-- menginstall chart.js -->
- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-<!-- membuat grafik line dengan data statis menggunakan chart.js -->
- <script>
-    const ctx = document.getElementById('myChart').getcontext('2d');
+<!-- membuat grafik line dengan data statis mempergunakan chart.js -->
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
-        type: 'line', //jenis grafik
+        type: 'line', // Jenis grafik
         data: {
-            labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni'], //label sumbu x
-            datasets:[{
+            labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni'], // Label sumbu X
+            datasets: [{
                 label: 'Penjualan',
-                data: [10, 20, 30, 40, 50, 60],//data untuk grafik
-                bordercolor: 'rgba(75, 192, 192, 1)', //warna garis
-                backgroundcolor: 'rgba(75, 192, 192, 0.2)', //warna area
-                borderwidth: 2
+                data: [10, 20, 30, 40, 50, 60], // Data untuk grafik
+                borderColor: '#0077B6', // Biru Laut (BlueHorizon)
+                backgroundColor: 'rgba(0, 119, 182, 0.2)', // Warna area transparan
+                pointBackgroundColor: '#00A8E8', // Warna titik data (Aqua Blue)
+                pointBorderColor: '#0077B6',
+                borderWidth: 2
             }]
-        }
-    })
- </script>
+        },
+        options: { // digunakan untuk mengkustom grafik yang dihasilkan
+            plugins: {
+                legend: {
+                    position: 'top', // Posisi legenda
+                },
+                tooltip: {
+                    enabled: true, // Menampilkan tooltip
+                }
+            },
+            scales: { // pengaturan sumbu X dan Y
+                x: {
+                    title: {
+                        display: true,
+                        text: "Bulan",
+                        color: '#003459', // Warna teks sumbu
+                        font: { weight: 'bold' }
+                    },
+                    ticks: { color: '#0077B6' } // Warna label sumbu X
+                },
+                y: {
+                    beginAtZero: true, // Mulai dari nol
+                    title: {
+                        display: true,
+                        text: "Jumlah Penjualan",
+                        color: '#003459', // Warna teks sumbu
+                        font: { weight: 'bold' }
+                    },
+                    ticks: { color: '#0077B6' } // Warna label sumbu Y
+                },
+            },
+        },
+    });
+</script>
+
 </html>
